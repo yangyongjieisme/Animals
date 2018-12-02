@@ -2,8 +2,8 @@ package com.singtel.simpleanimals.model;
 
 public class Chicken extends Animal{
 
-	public void say() {
+	public void say(String s) {
 		
-		System.out.println("“Cluck, cluck");
+		System.out.print(s);
 	}
 }
