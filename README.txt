@@ -5,5 +5,7 @@ b) in console, go to YOUR_UNZIPPED_DIR, run the following command
     mvn spring-boot:run
    to start to server, once server statred the url is http://localhost:8080 
 c) go into YOUR_UNZIPPED_DIR/script, you will see 
-     runRequest.sh  -- a bash script to run the http requests
-   
+     runRequest.sh  -- a bash script to run the http request
+     
+     
+d) Final Design structure showed by AnimalRelationsGraph.png 
