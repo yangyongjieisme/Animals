@@ -105,4 +105,13 @@ public class modelTest {
 		}
 		assertEquals("I am swiming", outContent.toString());
 	}
+	@Test
+	public void qC12Test() {
+
+		Caterpillar caterpillar=new Caterpillar();
+		caterpillar.walk();
+		Butterfly butterfly=caterpillar.transform();
+		butterfly.fly();
+		assertEquals("Cock-a-doodle-doo", outContent.toString());
+	}
 }
