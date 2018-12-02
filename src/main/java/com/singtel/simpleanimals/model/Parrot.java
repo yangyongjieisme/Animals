@@ -1,18 +1,17 @@
 package com.singtel.simpleanimals.model;
 
-public class Parrot extends FlyingBird{
-	
+public class Parrot extends FlyingBird {
+
 	private Object near;
-	
+
 	public Parrot(Object near) {
-		this.near=near;
+		this.near = near;
 	}
 
 	public void sing() {
-		if(near instanceof Bird) {
+		if (near instanceof Bird) {
 			((Bird) near).sing();
-		}
-		else {
+		} else {
 			System.out.print("Extensible for other kind of objects");
 		}
 	}
