@@ -10,6 +10,8 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class modelTest {
@@ -38,5 +40,34 @@ public class modelTest {
 		bird.sing();
 		assertEquals("Bird Singing", outContent.toString());
 	}
+	@Test
+	public void q2Test_1() {
+
+		Duck duck = new Duck();
+		assertTrue(duck.canFly());
+		duck.say("Quack, quack");
+		assertEquals("Quack, quack", outContent.toString());
+		
+		
+	}
+	@Test
+	public void q2Test_2() {
+
 	
+		Chicken chicken=new Chicken();
+		assertFalse(chicken.canFly());
+		chicken.say("Cluck, cluck");
+		assertEquals("Cluck, cluck", outContent.toString());
+		
+	}
+	@Test
+	public void q3Test() {
+
+	
+		Chicken rooster=new Chicken();
+		assertFalse(rooster.canFly());
+		rooster.say("Cock-a-doodle-doo");
+		assertEquals("Cock-a-doodle-doo", outContent.toString());
+		
+	}
 }
