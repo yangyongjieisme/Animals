@@ -30,37 +30,13 @@ public class modelTest {
 	    System.setOut(originalOut);
 	    System.setErr(originalErr);
 	}
-/*
+
 	@Test
-	public void q1Test() {
+	public void qA1Test() {
 
 		Bird bird = new Bird();
-		bird.walk();
-		bird.fly();
 		bird.sing();
+		assertEquals("Bird Singing", outContent.toString());
 	}
 	
-	@Test
-	public void q2Test() {
-
-		Duck duck = new Duck();
-		duck.walk();
-		duck.fly();
-		duck.sing();
-		duck.swim();
-		duck.say();
-		
-		Chicken chicken=new Chicken();
-		chicken.say();
-		
-	}
-*/	
-	@Test
-	public void q3Test() {
-
-		
-		Chicken rooster=new Chicken();
-		rooster.say("Cock-a-doodle-doo");
-		assertEquals("Cock-a-doodle-doo", outContent.toString());
-	}
 }
