@@ -1,6 +1,6 @@
 package com.singtel.simpleanimals.model;
 
-public class Parrot extends Bird{
+public class Parrot extends FlyingBird{
 	
 	private Object near;
 	

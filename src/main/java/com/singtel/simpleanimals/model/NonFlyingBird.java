@@ -1,5 +1,6 @@
 package com.singtel.simpleanimals.model;
 
-class Animal {
+public class NonFlyingBird extends Bird{
 	
+
 }

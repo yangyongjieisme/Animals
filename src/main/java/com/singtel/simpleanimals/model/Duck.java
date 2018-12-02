@@ -1,6 +1,6 @@
 package com.singtel.simpleanimals.model;
 
-public class Duck extends Bird{
+public class Duck extends FlyingBird{
 
 	public void sing() {
 		

@@ -1,6 +1,6 @@
 package com.singtel.simpleanimals.model;
 
-public class Chicken extends Bird{
+public class Chicken extends NonFlyingBird{
 	
 	private boolean rooster=false;
 	
@@ -11,10 +11,7 @@ public class Chicken extends Bird{
 		this.rooster=rooster;
 	}
 
-	public boolean canFly() {
-		return false;
-		
-	}
+	
 	
 	public void sing() {
 		if(!rooster) {
