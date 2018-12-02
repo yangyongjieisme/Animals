@@ -152,8 +152,15 @@ public class modelTest {
 		assertEquals(3,canWalk);
 		assertEquals(3,canSing);
 		assertEquals(4,canSwim);
-		
-		
 
 	}
+	@Test
+	public void qBonus1Test() {
+
+		Chicken rooster = new Chicken(true,"ch");
+		rooster.sing();
+		assertEquals("Gu gu", outContent.toString());
+
+	}
+	
 }
