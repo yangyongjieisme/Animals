@@ -93,4 +93,16 @@ public class modelTest {
 		Clownfish clownfish = new Clownfish();
 		assertEquals("small", clownfish.getSize());
 	}
+	
+	@Test
+	public void qB3Test() {
+
+		Dolphin dolphin=new Dolphin();
+		try {
+			dolphin.swim();
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		assertEquals("I am swiming", outContent.toString());
+	}
 }
