@@ -10,10 +10,7 @@ class Bird extends Animal {
 		
 		System.out.print("Bird Singing");
 	}
-	public void say() {
-		System.out.print("Bird Says");
-		
-	}
+	
 	public boolean canFly() {
 		return true;
 		

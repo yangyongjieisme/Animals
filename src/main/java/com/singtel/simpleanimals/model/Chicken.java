@@ -16,7 +16,7 @@ public class Chicken extends Bird{
 		
 	}
 	
-	public void say() {
+	public void sing() {
 		if(!rooster) {
 			System.out.print("Cluck, cluck");
 		}else {

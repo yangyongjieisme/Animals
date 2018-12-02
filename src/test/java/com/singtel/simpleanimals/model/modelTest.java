@@ -45,7 +45,7 @@ public class modelTest {
 
 		Duck duck = new Duck();
 		assertTrue(duck.canFly());
-		duck.say();
+		duck.sing();
 		assertEquals("Quack, quack", outContent.toString());
 		
 		
@@ -56,7 +56,7 @@ public class modelTest {
 	
 		Chicken chicken=new Chicken();
 		assertFalse(chicken.canFly());
-		chicken.say();
+		chicken.sing();
 		assertEquals("Cluck, cluck", outContent.toString());
 		
 	}
@@ -66,7 +66,7 @@ public class modelTest {
 	
 		Chicken rooster=new Chicken(true);
 		assertFalse(rooster.canFly());
-		rooster.say();
+		rooster.sing();
 		assertEquals("Cock-a-doodle-doo", outContent.toString());
 		
 	}
@@ -75,7 +75,7 @@ public class modelTest {
 
 		
 		Parrot withRooster=new Parrot(new Chicken(true));
-		withRooster.say();
+		withRooster.sing();
 		assertEquals("Cock-a-doodle-doo", outContent.toString());
 	}	
 	

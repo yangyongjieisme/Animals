@@ -2,7 +2,7 @@ package com.singtel.simpleanimals.model;
 
 public class Duck extends Bird{
 
-	public void say() {
+	public void sing() {
 		
 		System.out.print("Quack, quack");
 		

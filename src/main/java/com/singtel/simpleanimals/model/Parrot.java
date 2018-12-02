@@ -8,9 +8,9 @@ public class Parrot extends Bird{
 		this.near=near;
 	}
 
-	public void say() {
+	public void sing() {
 		if(near instanceof Bird) {
-			((Bird) near).say();
+			((Bird) near).sing();
 		}
 		else {
 			System.out.print("Extensible for other kind of objects");
